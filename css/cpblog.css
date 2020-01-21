@@ -1,0 +1,87 @@
+@font-face {
+  font-family: CoreSansCR-Regular;
+  src: url(../fonts/CoreSansCR-45Regular.woff2);
+}
+@font-face {
+  font-family: CoreSansCR-Light;
+  src: url(../fonts/CoreSansCR-35Light.woff2);
+}
+@font-face {
+  font-family: CoreSansCR-Bold;
+  src: url(../fonts/CoreSansCR-65Bold.woff2);
+}
+@font-face {
+  font-family: CoreSansCR-Medium;
+  src: url(../fonts/CoreSansCR-55Medium.woff2);
+}
+@font-face {
+  font-family: CoreSansCR-ExtraBoald;
+  src: url(../fonts/CoreSansCR-75ExtraBold.woff2);
+}
+*,
+*:after,
+*:before{box-sizing:border-box}
+body{
+	margin: 0;
+}
+.container{
+	width: 75%;
+    margin: 0 auto;
+}
+.cpb-header-search {
+    width:25px;
+}
+.cpb-header-logo {
+    width: 150px;
+    font-family: 'CoreSansCR-Bold';
+	font-size: 5rem;
+	color: #6d6e71;
+}
+.center-text{
+	text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+ul.cpb-menu-side {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    top: 0;
+    transition: 0.3s all linear;
+    padding: 20px;
+}
+.show-side-menu{
+	left: 0;
+}
+.hide-side-menu{
+	left: -100%;	
+}
+main{
+	font-family: 'CoreSansCR-Medium';
+    color: #6d6e71;
+}
+footer{
+	font-family: 'CoreSansCR-Bold';
+	font-size: 1.5rem;
+	color: #6d6e71;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+section.cpb-content-home {
+    height: 100vh;
+    width: 100%;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
