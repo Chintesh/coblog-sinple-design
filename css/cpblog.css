@@ -58,6 +58,16 @@ ul.cpb-menu-side {
     top: 0;
     transition: 0.3s all linear;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul.cpb-menu-side li {
+    padding: .75rem;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.15;
+    font-family: 'CoreSansCR-Bold';
 }
 .show-side-menu{
 	left: 0;
@@ -84,4 +94,22 @@ section.cpb-content-home {
     font-size: 2.5rem;
     display: flex;
     align-items: center;
+}
+.pink{
+	color: #dd5a6f;
+}
+.light_green{
+	color: #764299;
+}
+.purple_dark{
+	color: #8dc751;
+}
+.blue{
+	color: #6f94cc;
+}
+.orange{
+	color: #f37035;
+}
+.yellow{
+	color: #fcbc18;
 }
