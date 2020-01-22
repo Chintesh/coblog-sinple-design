@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.type', {
-        strings: ["os pezinhos das meninas um charme! Seu design clássico garante leveza aos looks – assim fica fácil combinar com diversas roupas! Confeccionados em couro 100% natural, os sapatos da linha Alice têm forração interna em couro antitranspirante, palmilha macia e solado de borracha, além do fechamento em velcro, que facilita na hora de calçar."],
+        strings: ["Detail-oriented WordPress Developer with extensive experience with WordPress plugins and widgets. Well versed in many other programming languages."],
         stringsElement: null,
 		// typing speed
 		typeSpeed: 2,
