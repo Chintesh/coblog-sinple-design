@@ -1,0 +1,61 @@
+@font-face {
+    font-family: CoreSansCR-Regular;
+    src: url(fonts/CoreSansCR-45Regular.woff2);
+  }
+  @font-face {
+    font-family: CoreSansCR-Light;
+    src: url(fonts/CoreSansCR-35Light.woff2);
+  }
+  @font-face {
+    font-family: CoreSansCR-Bold;
+    src: url(fonts/CoreSansCR-65Bold.woff2);
+  }
+  @font-face {
+    font-family: CoreSansCR-Medium;
+    src: url(fonts/CoreSansCR-55Medium.woff2);
+  }
+  @font-face {
+    font-family: CoreSansCR-ExtraBoald;
+    src: url(fonts/CoreSansCR-75ExtraBold.woff2);
+  }
+  *,
+  *:after,
+  *:before{box-sizing:border-box}
+  body{
+      margin: 0;
+  }
+  .container{
+    width: 98%;
+      margin: 0 auto;
+          max-width: 1200px;
+  }
+  .center-text{
+      text-align: center;
+  }
+  
+  main{
+      font-family: 'CoreSansCR-Medium';
+      color: #6d6e71;
+  }
+  .fix{
+    position: fixed;
+  }
+  
+  .pink{
+      color: #dd5a6f;
+  }
+  .light_green{
+      color: #8dc751;
+  }
+  .purple_dark{
+      color: #764299;
+  }
+  .blue{
+      color: #6f94cc;
+  }
+  .orange{
+      color: #f37035;
+  }
+  .yellow{
+      color: #fcbc18;
+  }

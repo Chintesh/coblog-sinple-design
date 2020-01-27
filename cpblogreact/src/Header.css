@@ -1,0 +1,51 @@
+/*Header*/
+nav.cpb-header-menu {
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    top: 0;
+}
+ul.cpb-menu-side {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    top: 0;
+    transition: 0.3s all linear;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #f2f2f2;
+}
+ul.cpb-menu-side li {
+    padding: .75rem;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.15;
+    font-family: 'CoreSansCR-Bold';
+}
+.show-side-menu{
+  left: 0;
+}
+.hide-side-menu{
+  left: -100%;  
+}
+
+.cpb-header-search {
+    width:25px;
+}
+.cpb-header-logo {
+    font-family: 'CoreSansCR-Bold';
+  font-size: 5rem;
+  color: #6d6e71;
+}
+img.cpb-search-icon {
+    width: 40px;
+}

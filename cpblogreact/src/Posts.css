@@ -1,0 +1,44 @@
+section.cpb-post-listing.list {
+    margin: 4rem 0 4rem 0;
+}
+
+.text-grey-darkest {
+    color: #6d6e71;
+}
+
+section .cpb-main-post-container {
+  padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    display: flex;
+}
+.cpb-main-post-heading {
+    width: 25%;
+}
+.cpb-main-post-heading h2{
+border-bottom: 3px solid #764299;
+}
+.cpb-main-post-container {
+    background: #f9f9f9;
+}
+
+.cpb-main-post-body {
+    width: 75%;
+    display: flex;
+}
+
+.cpb-main-post-body img{
+width: 35%
+}
+.cpb-main-post-body p {
+    width: 65%;
+    padding-left: 3rem;
+}
+.cpb-main-post-body p a {
+    color: #764299;
+    text-decoration: none;
+    font-family: CoreSansCR-light;
+}
