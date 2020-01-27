@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 import './Header.css';
 class Header extends Component {
   render() {
-	let	classfix = '';
-    if(window.location.pathname == '/'){
-      classfix = 'fix';
-    }
     return (
       <React.Fragment>
-       <header className={classfix}>
+       <header>
 		<nav className="cpb-header-menu">
 			<img className="cpb-menu-icon" src="images/menu.svg" id="cpb-menu-icon-id" onclick="ToogleMenu()" />
 			<ul className="cpb-menu-side hide-side-menu" id="cpb-menu-side-id">
