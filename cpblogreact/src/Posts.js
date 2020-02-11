@@ -1,58 +1,52 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import './Posts.css';
 class Posts extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      data: []
+    };
+  }
+
+  componentWillMount() {
+    fetch("Posts.json")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            data: result.items
+          });
+        },
+        (error) => {
+          this.setState({
+            error
+          });
+        }
+      )
+      console.log(this.state.data);
+  }
   render() {
-    return (
+const { error, data } = this.state;
+return (
         <main className="container">
-		<section className="cpb-post-listing list">
-			<div className="cpb-main-post-container">
-   <div className="cpb-main-post-heading">
-      <h2 className="text-grey-darker">description</h2>
-   </div>
-   <div className="cpb-main-post-body">
-   	<img src="https://www.multidots.com/wp-content/uploads/2019/10/md-snearkernews-bg.png" />
-      <p>The Baby line shoes were developed with great care to beautify and comfortably comfort babies' feet.Presented in several colors, the Baby line is produced in 100% natural leather...<a href="#">Read more</a></p>
-   </div>
-</div>
-<div className="cpb-main-post-container">
-   <div className="cpb-main-post-heading">
-      <h2 className="text-grey-darker">description</h2>
-   </div>
-   <div className="cpb-main-post-body">
-   	<img src="https://www.multidots.com/wp-content/uploads/2019/10/md-snearkernews-bg.png" />
-      <p>The Baby line shoes were developed with great care to beautify and comfortably comfort babies' feet.Presented in several colors, the Baby line is produced in 100% natural leather...<a href="#">Read more</a></p>
-   </div>
-</div>
-<div className="cpb-main-post-container">
-   <div className="cpb-main-post-heading">
-      <h2 className="text-grey-darker">description</h2>
-   </div>
-   <div className="cpb-main-post-body">
-   	<img src="https://www.multidots.com/wp-content/uploads/2019/10/md-snearkernews-bg.png" />
-      <p>The Baby line shoes were developed with great care to beautify and comfortably comfort babies' feet.Presented in several colors, the Baby line is produced in 100% natural leather...<a href="#">Read more</a></p>
-   </div>
-</div>
-<div className="cpb-main-post-container">
-   <div className="cpb-main-post-heading">
-      <h2 className="text-grey-darker">description</h2>
-   </div>
-   <div className="cpb-main-post-body">
-   	<img src="https://www.multidots.com/wp-content/uploads/2019/10/md-snearkernews-bg.png" />
-      <p>The Baby line shoes were developed with great care to beautify and comfortably comfort babies' feet.Presented in several colors, the Baby line is produced in 100% natural leather...<a href="#">Read more</a></p>
-   </div>
-</div>
-<div className="cpb-main-post-container">
-   <div className="cpb-main-post-heading">
-      <h2 className="text-grey-darker">description</h2>
-   </div>
-   <div className="cpb-main-post-body">
-   	<img src="https://www.multidots.com/wp-content/uploads/2019/10/md-snearkernews-bg.png" />
-      <p>The Baby line shoes were developed with great care to beautify and comfortably comfort babies' feet.Presented in several colors, the Baby line is produced in 100% natural leather...<a href="#">Read more</a></p>
-   </div>
-</div>
-		</section>
-	</main>
+          <section className="cpb-post-listing list">
+          {data.map(item => (
+            <div  key={item.slug} className="cpb-main-post-container">
+             <div className="cpb-main-post-heading">
+                <h2 className="text-grey-darker">{item.title}</h2>
+             </div>
+               <div className="cpb-main-post-body">
+                <img src={item.image} />
+                  <p>{item.short_description}...<Link to={{ pathname: '/blog/' + item.slug  }} className="light_green menuid" >Read more</Link></p>
+               </div>
+            </div>
+          ))}
+          </section>
+        </main>
     );
+    
   }
 }
 
